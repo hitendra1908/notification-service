@@ -1,6 +1,7 @@
 # NotificationService
 
 NotificationService is an API that listens to a "freelancer_notification" Kafka topic, consumes messages and then store into Database.
+Note: This service is using the same database and kafka from FreeLancerService(https://github.com/hitendra1908/freelancer-service.git) so we need to start the service first or at least the start the need to start the docker
 
 ## Technologies Used
 This project utilizes the following technologies:
@@ -11,6 +12,8 @@ This project utilizes the following technologies:
 * Java 21
 * JUnit 5
 * Kafka
+* [Testcontainers](https://testcontainers.com/) (for Spring integration tests using a container)
+
 
 ## How to Run the Project
 
@@ -18,11 +21,11 @@ This project utilizes the following technologies:
    ```sh
    git clone https://github.com/hitendra1908/notification-service.git
 
-2. Build the project:
+2. Build the project: ( We need to run "Docker compose up" from FreelancerService first)
    ```sh
    mvn clean install
 
-3Run the Spring Boot application:
+3. Run the Spring Boot application:
    ```sh
    mvn spring-boot:run
 
