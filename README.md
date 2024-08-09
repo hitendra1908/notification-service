@@ -1,7 +1,7 @@
 # NotificationService
 
-NotificationService is an API that listens to a "freelancer_notification" Kafka topic, consumes messages and then store into Database.
-Note: This service is using the same database and kafka from FreeLancerService(https://github.com/hitendra1908/freelancer-service.git) so we need to start the service first or at least the start the need to start the docker
+NotificationService is an API that listens to a "freelancer_notification" Kafka topic, consumes messages and then stores it into Database.
+Note: This service is using the same database and kafka from FreeLancerService(https://github.com/hitendra1908/freelancer-service.git) so we need to start freelancer-service first or at least the start the the docker.
 
 ## Technologies Used
 This project utilizes the following technologies:
